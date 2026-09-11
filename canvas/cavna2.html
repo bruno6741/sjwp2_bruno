@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="mycanvas" width="600" height="600"  style="border: 1px black solid;"></canvas>
+    <script>
+        let c = document.getElementById("mycanvas");
+        let ctx = c.getContext("2d");
+
+        ctx.beginPath();
+        ctx.rect(50, 170, 450, 250);
+        ctx.fillStyle = "blue";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(70, 250, 80, 170);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(240, 250, 150, 80);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(50, 170);
+        
+        ctx.stroke();
+    </script>
+</body>
+</html>
