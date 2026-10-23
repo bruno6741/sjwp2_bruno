@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad11</title>
+</head>
+<body>
+   <a  id="link" href="https://classroom.google.com/">classroom</a>
+    <button id="btn">promijeni</button>
+
+    <script>
+        let link = document.getElementById("link");
+        let gumb = document.getElementById("btn");
+
+        gumb.onclick = function(){
+            link.setAttribute("href", "https://www.wikipedia.org/");
+            link.textContent = "drugi link";
+        }
+    </script>
+</body>
+</html>

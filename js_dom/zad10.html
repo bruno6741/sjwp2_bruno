@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad10</title>
+</head>
+<body>
+    <img id="slika" src="https://i0.wp.com/osmrtnica.rip/wp-content/uploads/2020/03/received_2798931937002865-01.jpeg?fit=947%2C687&ssl=1" alt="dado">
+    <button id="btn">promijeni</button>
+
+    <script>
+        let slika = document.getElementById("slika");
+        let gumb = document.getElementById("btn");
+
+        gumb.onclick = function(){
+            slika.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgG-qwL81DeqX4OdoK1aRKY4ABeDDLi-SY0otDfKk7OQ&s=10");
+            slika.setAttribute("alt", "drvo");
+        }
+    </script>
+</body>
+</html>

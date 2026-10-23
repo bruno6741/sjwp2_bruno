@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad 5</title>
+</head>
+<body>
+    <button id="btn_prikazi">Prikazi poruku</button>
+    <div id="div1"></div>
+
+    <script>
+        let btn_prikazi = document.getElementById("btn_prikazi");
+        let div1 = document.getElementById("div1");
+
+        btn_prikazi.onclick = function(){
+            div1.textContent = "Uspjesno ste kliknuli gumb";
+        }
+    </script>
+</body>
+</html>

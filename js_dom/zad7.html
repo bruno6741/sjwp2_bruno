@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad7</title>
+</head>
+<body>
+    <p id="dado">Upozorenje</p>
+    <button id="btn_j">Upozori</button>
+    <script>
+        let btn = document.getElementById("btn_j");
+        let poruka = document.getElementById("dado");
+        btn.onclick = function(){
+            poruka.style.color = "red";
+            poruka.innerHTML = "<strong>Upozorenje!</strong>";
+            poruka.style.backgroundColor = "yellow";
+        }
+    </script>
+</body>
+</html>

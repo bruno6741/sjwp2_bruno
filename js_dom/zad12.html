@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad12</title>
+</head>
+<body>
+    <button>Omoguci</button>
+    <button>Onemoguci</button>
+    <button>treci button</button>
+
+    <script>
+        let btn = document.querySelectorAll("button");
+        btn[0].onclick = function(){
+            btn[2].removeAttribute("disabled");
+        }
+        btn[1].onclick = function(){
+            btn[2].setAttribute("disabled", "true");
+        }
+    </script>
+</body>
+</html>
