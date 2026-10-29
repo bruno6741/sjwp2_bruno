@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zad15</title>
+</head>
+<body>
+    <h1 id="naslov">Ime</h1>
+    <button id="btn_naslov">Promijeni ime</button> <hr>
+    <p id="odlomak">Odlomak</p>
+    <button id="btn_odl">Promijeni opis</button> <hr>
+    <img id="slika" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgG-qwL81DeqX4OdoK1aRKY4ABeDDLi-SY0otDfKk7OQ&s=10" width="200" alt="drvo">
+    <button id="btn_slika">Promijeni fotografiju</button> <hr>
+    <a id="link" href="">Link</a>
+    <button id="btn_link">Promijeni poveznicu</button>
+
+    <script>
+      let a = document.getElementById("naslov");
+      let abtn = document.getElementById("btn_naslov"); 
+      let b = document.getElementById("odlomak");
+      let bbtn = document.getElementById("btn_odl");
+      let c = document.getElementById("slika");
+      let cbtn = document.getElementById("btn_slika");
+      let d = document.getElementById("link");
+      let dbtn = document.getElementById("btn_link");
+
+      abtn.onclick = function(){
+        a.textContent = prompt("Unesite novo ime: ");
+      }
+      bbtn.onclick = function(){
+        b.textContent = prompt("Unesite novi opis: ");
+      }
+      cbtn.onclick = function(){
+        c.setAttribute("src", prompt("Unesi link za novu sliku: "));
+      }
+      dbtn.onclick = function(){
+        d.setAttribute("href", prompt("Unesite novi link: "));
+        d.textContent = "novi link";
+      }
+
+    </script>
+</body>
+</html>

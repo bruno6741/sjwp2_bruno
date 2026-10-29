@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zad14</title>
+  <style>
+    .tamna{
+      color: white;
+    }
+  </style>
+</head>
+<body>
+    <h1 id="naslov">Naslov</h1>
+    <button id="change">Promjeni temu</button>
+  <script>
+    let a = document.getElementById("change");
+    let b = document.getElementById("naslov");
+    let c = document.body;
+    a.onclick = function(){
+      b.classList.toggle("tamna");      
+      if(c.style.backgroundColor == "grey"){
+        c.style.backgroundColor = "white";
+      }
+      else c.style.backgroundColor = "grey";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zad13</title>
+</head>
+<body>
+  <p id="Odlomak">0</p>
+  <button id="gumb">Klikni</button>
+  <script>
+    let a = document.getElementById("Odlomak");
+    let b = document.getElementById("gumb");
+    let c = 0;
+    b.onclick = function(){
+      if(c < 10){
+       c += 1;
+       a.textContent = c; 
+      }
+      else{
+        a.style.color = "green";  
+      }
+    }
+  </script>
+</body>
+</html>
